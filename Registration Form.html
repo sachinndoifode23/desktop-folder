@@ -1,24 +1,60 @@
 <html>
-<head>
-<title>
-	Registration Form
-</title>
-</head>
-<body>
-	<fieldset width="60%">
-	<legend width=50% >New User</legend>
-	<div>
-	<div>First Name : </div>
-	<div><input type="text" name="firstname" id="fs-div-div-input1" pattern="[a-zA-z]{2,}" placeholder="Enter First Name" /></div>
-	</div>
-	<div>Last Name : </div>
-	<div><input type="text" name="lastname" id="fs-div-div-input2" pattern="[a-zA-z]{2,}" placeholder="Enter Last Name" /></div>
-	</div>
-	<div>
-	<div>Date of Birth : </div>
-	<div><input type="date" name="lastname" id="fs-div-div-input3" placeholder="Enter Last Name" /></div>
-	</div>
-	</fieldset>
-	
-</body>
+  <head>
+    <title>Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto px-4 flex justify-center items-center h-full">
+      <fieldset>
+        <legend
+          class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-2"
+        >
+          New User
+        </legend>
+        <div>
+          <div class="my-2">
+            <div>First Name :</div>
+            <div>
+              <input
+                type="text"
+                class="block w-4/5 rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                name="firstname"
+                id="fs-div-div-input1"
+                pattern="[a-zA-z]{2,}"
+                placeholder="Enter First Name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="my-2">
+          <div>Last Name :</div>
+          <div>
+            <input
+              type="text"
+              class="block w-4/5 rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+              name="lastname"
+              id="fs-div-div-input2"
+              pattern="[a-zA-z]{2,}"
+              placeholder="Enter Last Name"
+            />
+          </div>
+        </div>
+        <div class="my-2">
+          <div>Date of Birth :</div>
+          <div>
+            <input
+              class="block w-3/2 rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+              type="datetime-local"
+              name="lastname"
+              id="fs-div-div-input3"
+              placeholder="Enter Last Name"
+            />
+          </div>
+        </div>
+        <div>
+          <button class="btn btn-primary" type="submit">Sign Up</button>
+        </div>
+      </fieldset>
+    </div>
+  </body>
 </html>

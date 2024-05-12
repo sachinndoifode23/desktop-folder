@@ -1,12 +1,30 @@
 .App {
   text-align: center;
 }
-
+*html,
+body {
+  box-sizing: border-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+.square {
+  border: 1px solid #fff;
+  width: 3rem;
+  height: 2.4rem;
+}
+.board-row {
+  display: flex;
+  flex-direction: row;
+}
+.game {
+  display: flex;
+}
+.status {
+  margin: 10px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
